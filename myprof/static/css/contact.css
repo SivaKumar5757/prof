@@ -1,0 +1,73 @@
+.cocont{
+    background-color: #1e293100;
+    border-radius: 8px;
+    height: fit-content;
+    width: calc(100% - 60px);
+    margin-left: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: column;
+    padding: 50px 0px;
+    position: relative;
+}
+body,html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    background: linear-gradient(90deg, #1E2931,#353842);
+    transition: all 1s ease;
+}
+.lineform{
+    width: 100%;
+    padding-left: 10px;
+    background-color: #1e293100 !important;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #8a8787;
+    text-shadow: none;
+    color: #fff;
+    
+}
+.lineform:focus{
+    border-bottom: 2px solid #fff;
+    background-color: #1e293100;
+
+}
+input:-webkit-autofill {
+    background-color: #ff000000 !important; /* Set your desired background color */
+    color: #ffffff !important; /* Set the text color */
+    -webkit-box-shadow: 0 0 0px 0px #6e6e6e00 ; /* Prevent the white background */
+    transition: background-color 5000s,color 5000s ease-in-out 0s; /* Prevent background color from changing */
+}
+.formarea{
+    width: 100%;
+    padding:10px 10px ;
+    background-color: #1e293100;
+    border: 1px solid #8a8787; 
+    color: #fff;  
+    min-height: 100px; 
+}
+.formarea:focus{
+    border: 2px solid #fff; 
+    border-radius: 0px;
+    outline: none;
+
+}
+.forml{
+    width: 100%;
+    color: #fc5655;
+}
+.posin{
+    width: 80%;
+}
+@media (max-width: 991px) {
+
+    .posin{
+        width: 100%;
+    }
+}

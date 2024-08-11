@@ -1,0 +1,60 @@
+.skcont{
+    background-color: #1e293100;
+    border-radius: 8px;
+    height: fit-content;
+    width: calc(100% - 60px);
+    margin-left: 33px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 20px 50px 20px;
+    margin-top: 100px;
+    transition: all 2s ease;
+
+}
+body,html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    background: linear-gradient(90deg, #1E2931,#353842);
+    transition: all 1s ease;
+}
+.skill{
+    width:160px;
+    height: 220px;
+    background-color: #000;
+    display: flex;
+    justify-content: start;
+    border-radius: 8px;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0px 0px 0px;
+    transition: all 1s ease;
+    gap: 20px;
+}
+
+
+.cardpi{
+    width: 130px;       
+    height: 130px;    
+    background-size: cover; /* Adjusts the image to cover the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;  
+       
+}
+.shea{
+    color: #fc5655; font-weight: 600; font-size: 25px;width: 100%; text-align: center;
+}
+
+.sski{
+    color: #fff; font-weight: 600;
+}
+.skill:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

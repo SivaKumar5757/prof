@@ -1,0 +1,16 @@
+# Core dependencies
+Django==5.0.7
+djangorestframework==3.15.0  # If using Django REST Framework
+gunicorn==21.1.0  # WSGI HTTP server for serving your application
+psycopg2==2.9.7  # PostgreSQL adapter for Python, necessary if using PostgreSQL
+bcrypt==4.0.1  # Bcrypt for hashing passwords
+argon2-cffi==23.1.0  # Argon2 for secure password hashing
+
+# Static files handling
+whitenoise==6.5.0  # For serving static files in production
+
+# Optional dependencies based on your project needs
+django-environ==0.10.0  # For environment variable management
+Pillow==9.5.0  # For image processing, required if you're using ImageField or similar
+django-extensions==3.2.1  # Useful tools for Django development
+django-crispy-forms==2.0  # For better form rendering
