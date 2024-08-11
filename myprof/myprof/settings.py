@@ -29,7 +29,6 @@ SECRET_KEY = 'django-insecure-$aardjw%9a!ir8%-^*u2y$w_7j*r*7o=o#drxr_&9-cy7^0$9e
 DEBUG = True
 
 ALLOWED_HOSTS = ["sivakumarportfolio.onrender.com"]
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -71,7 +70,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'myprof.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
@@ -127,6 +125,17 @@ USE_I18N = True
 USE_TZ = True
 
 
+
+#mail
+# settings.py
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'sivakumarpersonal.7@gmail.com'
+EMAIL_HOST_PASSWORD = 'ufxv pcov jnun lkmz'
+DEFAULT_FROM_EMAIL = 'sivakumarpersonal.7@gmail.com'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
