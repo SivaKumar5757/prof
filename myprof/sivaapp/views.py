@@ -5,7 +5,7 @@ from django.core.mail import send_mail
 
 def send_to_rep_email(name,email,text):
     subject = 'Your Message Reached To Sivakumar'
-    message = f"Hey {name} Your Message Reached Me,\n\n\n\nI will reply As Soon As Posible \n\n\nSivaKumar \n\n\n\nYour Message \n\n\n\n{text}"
+    message = f"Hey {name} I Got Your Message,\n\n\n\nI will reply As Soon As Posible \n\n\n\nYour Message \n\n{text}"
     from_email = 'sivakumarpersonal.7@gmail.com'
     recipient_list = [f"{email}"]
     send_mail(subject, message, from_email, recipient_list ,fail_silently=False,)
