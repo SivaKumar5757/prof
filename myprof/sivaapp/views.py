@@ -25,13 +25,13 @@ def about(request):
 def skills(request):
     web={"skilllist":
         [{"Web Development":{"Html" : "html.png","CSS" : "css.png","Javascript" : "javascript.png","Bootstrap":"bootstrap.png","Django" : "django.png",
-                           "Flask" : "flask.png","DOM":"dom.png","jQuery":"jquery.png","Jinja":"jinja.png",
-                           "WTForms":"wtforms.png"}},
+                           "Flask" : "flask.png","DOM":"javascript.png","jQuery":"jquery.png","Jinja":"jinja.png",
+                           }},
        {"Programming Language":{"Python":"python.png","Java":"java.png","C":"c.png","Javascript":"javascript.png",}},
        {"Data Science" : {"Pandas":"pandas.png","NumPy":"numpy.png","Matplotlib":"matplotlib.png","Scikit-Learn":"scikitlearn.png"}},
        {"Machine Learning":{"Tensorflow":"tensorflow.png","Keras":"keras.png","Scikit-Learn":"scikitlearn.png"}},
        {"Data Base":{"SQLite":"sqlite.png","SQLAlchemy":"sqlalchemy.png", "JSON":"json.png",}}, 
-       {"Web Scrapping": {"Selenium":"selinium.png","Beautiful Soup":"beautifulsoup.png"}},
+       {"Web Scrapping": {"Selenium":"selenium.png","Beautiful Soup":"beautifulsoup.png"}},
        {"Others":{"NLTK":"nltk.png","OpenCV":"opencv.png",}}
 
        ] 
