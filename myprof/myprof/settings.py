@@ -38,7 +38,7 @@ SECRET_KEY = get_env_variable('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["sivakumarportfolio.onrender.com",]
+ALLOWED_HOSTS = ["sivakumar-m.onrender.com",]
 # Application definition
 
 INSTALLED_APPS = [
@@ -61,7 +61,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 CSRF_TRUSTED_ORIGINS = [
-    'https://sivakumarportfolio.onrender.com',
+    'https://sivakumar-m.onrender.com',
 ]
 
 ROOT_URLCONF = 'myprof.urls'
