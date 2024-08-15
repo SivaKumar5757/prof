@@ -9,7 +9,8 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
-
+import os
+from django.core.exceptions import ImproperlyConfigured
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -23,12 +24,21 @@ medi=Path(str(BASE_DIR)+"/media")
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-$aardjw%9a!ir8%-^*u2y$w_7j*r*7o=o#drxr_&9-cy7^0$9e'
+
+
+def get_env_variable(var_name):
+    """ Get the environment variable or return exception """
+    try:
+        return os.environ[var_name]
+    except KeyError:
+        raise ImproperlyConfigured(f"Set the {var_name} environment variable")
+
+SECRET_KEY = get_env_variable('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["sivakumarportfolio.onrender.com"]
+ALLOWED_HOSTS = ["sivakumarportfolio.onrender.com",]
 # Application definition
 
 INSTALLED_APPS = [
@@ -147,6 +157,9 @@ STATICFILES_DIRS=[
     stat,
     
 ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
 MEDIA_ROOM=medi
 MEDIA_URL='media/'
 
