@@ -30,10 +30,11 @@ body,html {
     display: flex;
     justify-content: start;
     border-radius: 8px;
+    border: 2px solid #fc5655;
     align-items: center;
     flex-direction: column;
     padding: 20px 0px 0px 0px;
-    transition: all 1s ease;
+    transition: all 1s ease ;
     gap: 20px;
 }
 
@@ -57,4 +58,5 @@ body,html {
 .skill:hover{
     transform: translateY(-10px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid #fc5655;
 }

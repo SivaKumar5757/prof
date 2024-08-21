@@ -34,7 +34,7 @@ def get_env_variable(var_name):
         raise ImproperlyConfigured(f"Set the {var_name} environment variable")
 
 SECRET_KEY = get_env_variable('DJANGO_SECRET_KEY')
-
+# SECRET_KEY="django-insecure-$aardjw%9a!ir8%-^*u2y$w_7j*r*7o=o#drxr_&9-cy7^0$9e"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 # SECURE_SSL_REDIRECT = True
@@ -46,7 +46,7 @@ DEBUG = True
 # SECURE_HSTS_PRELOAD = True
 
 
-ALLOWED_HOSTS = ["sivakumar-m.onrender.com",]
+ALLOWED_HOSTS = ["sivakumar-m.onrender.com","127.0.0.1"]
 # Application definition
 
 INSTALLED_APPS = [
